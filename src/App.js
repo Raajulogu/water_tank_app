@@ -1,7 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import {  Table } from "react-bootstrap";
+import { Table } from "react-bootstrap";
 
 function App() {
   const [heights, setHeights] = useState([0, 4, 0, 0, 0, 6, 0, 6, 4, 0]);
@@ -56,9 +56,9 @@ function App() {
         onChange={(e) => setHeights(e.target.value.split(",").map(Number))}
       />
       <br />
-      <Button variant="contained"
-      onClick={() => calculateWaterUnits(heights)}
-      >Calculate</Button>
+      <Button variant="contained" onClick={() => calculateWaterUnits(heights)}>
+        Calculate
+      </Button>
       <div className="total-water-unit">
         <h3>Total Water Units:</h3>
         <span>{waterUnits}</span>
@@ -87,6 +87,14 @@ function App() {
             ))}
           </tbody>
         </Table>
+      </div>
+      <br />
+      <div className="note">
+        <h3>Note:</h3>
+        <p>
+          If you can't able to edit the value, please select the value which you
+          want to edit and replace with value which you want to give
+        </p>
       </div>
     </div>
   );
