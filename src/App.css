@@ -1,38 +1,37 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("https://cdn.wallpaperdirect.com/asset/img/product/189313/tiled/architects-paper-plain-blue-wallpaper-tiled-189313.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.total-water-unit{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 25px;
+}
+.rotate-table{
+  transform: rotate(180deg);
+}
+.water-unit {
+  background-color: #77aeee;
 }
 
-.App-link {
-  color: #61dafb;
+.wall-unit {
+  background-color: #fdf36a;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table{
+  border-collapse: collapse;
+}
+td{
+  width:50px;
+  height:20px;
+  padding:5px 25px;
+  border: 1px solid black;
+  transform: rotate(180deg);
 }
